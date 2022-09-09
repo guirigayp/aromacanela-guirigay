@@ -46,16 +46,21 @@ h4 {
     font-family: 'Merriweather Sans', sans-serif;
 }
 
+#botonera img {
+    width: 200px;
+}
+
 p {
     font-family: 'Oswald', sans-serif;
 }
 
 .cCinnamon {
     background-color: #d1a07d;
+    color: rgb(75, 55, 39);
 }
 
 .cLight {
-    background-color: rgba(255, 208, 174, 0.7);
+    background-color: rgba(255, 215, 186, 0.7);
 }
 
 .textCenter {
@@ -66,28 +71,11 @@ p {
     text-align: left;
 }
 
-.logoNavegacion {
-    width: 200px;
-}
-
 .encabezadoimgFluid {
     width: 100%;
 }
 
 /*NAVEGACION*/
-
-nav {
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px;
-}
-
-nav ul {
-    display: flex;
-}
 
 nav ul li {
     list-style: none;
@@ -107,31 +95,6 @@ nav ul li a:hover {
     font-size: 2.6rem;
 
 }
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 50px;
-}
-
-.info{
-    display: flex;
-    align-items: center;
-    padding: 20px;
-}
-
-.infoImg{
-    width: 500px;
-}
-
-.infoBox{
-    margin: 20px;
-}
-
-.iconosimgTP{
-    width: 200px;
-}
-
 
 main section p {
     color: rgb(131, 89, 47);
@@ -178,41 +141,18 @@ main section p {
 
 /*productos*/
 
-.tituloProd {
-    font-size: 3rem;
-    text-align: center;
-    padding: 20px 0;
-    font-family: 'Merriweather Sans', sans-serif;
-    margin: 50px 0;
-}
-
-.productos_galeria_figure {
-    width: 350px;
-    height: 400px;
-    text-align: center;
-    border: dotted rgb(110, 83, 63) 2px;
-    background-color: rgba(255, 208, 174, 0.7);
-    margin: 30px;
-    top: 30px;
-}
-
-.productos_galeria_figure_figcaption {
-    font-family: 'Merriweather Sans', sans-serif;
+.titlePanes{
+    font-family: 'Oswald', sans-serif;
     font-size: 2.5rem;
     color: rgb(110, 83, 63);
     padding: 10px 0;
 }
 
-.productos_galeria_p {
-    font-family: 'Merriweather Sans', sans-serif;
+main article p{
+    font-family: 'Oswald', sans-serif;
     font-size: 2rem;
-    padding: 1px 5px;
     color: rgb(110, 83, 63);
-}
 
-.productosimgPan {
-    width: 300px;
-    margin: 30px;
 }
 
 .filtros {
@@ -220,49 +160,6 @@ main section p {
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 2rem;
     color: rgb(110, 83, 63);
-}
-
-.contenedor {
-    max-width: 1200px;
-    display: grid;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
-}
-
-.gridPicture:nth-of-type(1){
-    grid-column: 1/2;
-    grid-row: 1/3;
-}
-
-.gridPicture:nth-of-type(2){
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-
-.gridPicture:nth-of-type(3){
-    grid-column: 3/4;
-    grid-row: 1/2;
-}
-
-.gridPicture:nth-of-type(4){
-    grid-column: 4/5;
-    grid-row: 1/2;
-}
-
-.gridPicture:nth-of-type(5){
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-
-.gridPicture:nth-of-type(6){
-    grid-column: 3/4;
-    grid-row: 2/3;
-}
-
-.gridPicture:nth-of-type(7){
-    grid-column: 4/5;
-    grid-row: 2/3;
 }
 
 /*promociones*/
@@ -283,79 +180,17 @@ main section p {
 
 /* contacto */
 
-#contenedorContacto {
-    width: 80%;
-    padding: 30px;
-    margin: 80px;
-    border: dotted rgb(110, 83, 63) 2px;
-    background-color: rgba(255, 208, 174, 0.7);
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-
-}
-
-.boxContacto {
-    padding: 50px;
-    font-family: 'Merriweather Sans', sans-serif;
-}
-
-.boxMapa {
-    position: relative;
-    top: 20px;
-    left: 50px;
+main div p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    color: rgb(110, 83, 63);
+    padding: 10px 0;
 }
 
 /* footer */
 
-#contenedorPie {
-    width: 100%;
-    height: 220px;
-    border: solid 1px rgb(110, 83, 63);
-    margin: auto;
-    position: relative;
-}
-
-#contenedorPie div {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-}
-
-.cajaLogo {
-    top: 10px;
-    left: 10px;
-}
-
-.cajaRedes {
-    top: 30px;
-    left: 250px;
-}
-
-.cajaRedes1 {
-    top: 60px;
-}
-
-.cajaRedes2 {
-    top: 60px;
-    left: 60px;
-}
-
-.cajaContacto {
-    top: 30px;
-    left: 600px;
-}
-
-.cajaContacto1 {
-    top: 40px;
-}
-
-.cajaContacto2 {
-    top: 80px;
-}
-
-.cajaContacto3 {
-    top: 120px;
+.spacing{
+    margin-top: 20px;
 }
 
 .logoPie {

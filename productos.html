@@ -1,157 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aroma Canela - Panaderia Artesanal</title>
     <link rel="shortcut icon" href="img/ms-icon-310x310.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-        <div class="nav">
-            <nav class="cLight">
-                <a href="index.html">
-                    <img src="img/logo.png" alt="logo de Aroma Canela" class="logoNavegacion">
-                </a>
-                <ul>
-                    <li>
-                        <a href="nosotros.html">Nosotros</a>
+    <!-- inicia nav-->
+    <nav class="navbar navbar-expand-lg navbar-light cLight" id="botonera">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="logo de Aroma Canela" class="logoNavegacion">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./nosotros.html">Nosotros</a>
                     </li>
-                    <li>
-                        <a href="aromacanela.html">Aroma Canela</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./aromacanela.html">Aroma Canela</a>
                     </li>
-                    <li>
-                        <a href="productos.html">Productos</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./productos.html">Productos</a>
                     </li>
-                    <li>
-                        <a href="promociones.html">Promociones</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./promociones.html">Promocioness</a>
                     </li>
-                    <li>
-                        <a href="contacto.html">Contacto</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
                     </li>
                 </ul>
-            </nav>
+            </div>
         </div>
-        <div class="header">
-            <header>
-                <img src="img/inicio.jpeg" alt="imagen de inicio" class="encabezadoimgFluid">
-            </header>
+    </nav>
+    <!-- ends nav-->
+    <header>
+        <img src="img/carrousel.jpeg" alt="imagen de inicio" class="encabezadoimgFluid">
+    </header>
+    <!-- inicia main-->
+    <main class="py-4">
+        <div class="container-fluid">
+            <h1 class="text-sm-start text-md-center text-lg-center py-5">"La mas rica y deliciosa variedad de panes
+                artesanales directo a tu mesa"</h1>
+            <div class="gridPicture filtros">
+                <form>
+                    <label for="categorias">Categorias</label>
+                    <select name="categorias" id="categorias">
+                        <optgroup label="Panes">
+                            <option value="pinita">Pinita</option>
+                            <option value="membrillo">Membrillo</option>
+                            <option value="queso">Queso</option>
+                            <option value="aromacanela">Aroma Canela</option>
+                            <option value="trenza">Trenza</option>
+                        </optgroup>
+                        <optgroup label="Tortas">
+                            <option value="tresleches">Tres Leches</option>
+                        </optgroup>
+                    </select>
+                </form>
+            </div>
+            <div class="row">
+                <article class="col-sm-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card cLight">
+                        <img src="img/panpinita.jpeg" class="card-img-top w-70 img-thumbnail" alt="pan pinita">
+                        <div class="card-body">
+                            <h2 class="card-title titlePanes">Pan Pinita</h2>
+                            <p class="card-text">$150</p>
+                            <p class="card-text">Pan dulce con destellos de anis</p>
+                            <a href="#" class="btn cCinnamon w-100">Comprar ahora</a>
+                        </div>
+                    </div>
+                </article>
+                <!--ends card I-->
+                <article class="col-sm-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card cLight">
+                        <img src="img/pantrenzadulce.jpeg" class="card-img-top w-100" alt="pan trenza">
+                        <div class="card-body">
+                            <h2 class="card-title titlePanes">Pan Trenza Dulce</h2>
+                            <p class="card-text">$600</p>
+                            <p class="card-text">Pan Trenzado azucarado</p>
+                            <a href="#" class="btn cCinnamon w-100">Comprar ahora</a>
+                        </div>
+                    </div>
+                </article>
+                <!--ends card II -->
+                <article class="col-sm-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card cLight">
+                        <img src="img/panaromacanela.jpeg" class="card-img-top w-70" alt="pan aroma canela">
+                        <div class="card-body">
+                            <h2 class="card-title titlePanes">Pan Aroma Canela</h2>
+                            <p class="card-text">$650</p>
+                            <p class="card-text">Pan endulzado con aroma a canela</p>
+                            <a href="#" class="btn cCinnamon w-100">Comprar ahora</a>
+                        </div>
+                    </div>
+                </article>
+                <!--ends card III-->
+                <article class="col-sm-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card cLight">
+                        <img src="img/pandequeso.jpeg" class="card-img-top w-70" alt="pan queso">
+                        <div class="card-body">
+                            <h2 class="card-title titlePanes">Pan de Queso</h2>
+                            <p class="card-text">$800</p>
+                            <p class="card-text">Pan gratinado relleno de queso</p>
+                            <a href="#" class="btn cCinnamon w-100">Comprar ahora</a>
+                        </div>
+                    </div>
+                </article>
+                <!--ends card IV-->
+                <article class="col-sm-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card cLight">
+                        <img src="img/panmembrillo.jpeg" class="card-img-top w-70" alt="pan membrillo">
+                        <div class="card-body">
+                            <h2 class="card-title titlePanes">Pan Membrillo</h2>
+                            <p class="card-text">$700</p>
+                            <p class="card-text">Pan relleno de membrillo</p>
+                            <a href="#" class="btn cCinnamon w-100">Comprar ahora</a>
+                        </div>
+                    </div>
+                </article>
+                <!--ends card V-->
+                <article class="col-sm-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card cLight">
+                        <img src="img/tortatresleches.jpeg" class="card-img-top w-70" alt="torta tres leches">
+                        <div class="card-body">
+                            <h2 class="card-title titlePanes">Torta Tres Leches</h2>
+                            <p class="card-text">$450</p>
+                            <p class="card-text">Torta a base de leche evaporada, crema de leche, leche condensada con
+                                un acabo de crema chantilly y un toque de canela</p>
+                            <a href="#" class="btn cCinnamon w-100">Comprar ahora</a>
+                        </div>
+                    </div>
+                </article>
+                <!--ends card VI-->
+            </div>
         </div>
-        <div>
-            <h1 class="tituloProd">"La mas rica y deliciosa variedad de panes artesanales directo a tu mesa"</h1>
-            <div class="contenedor">
-                <div class="gridPicture filtros">
-                    <form>
-                        <label for="categorias">Categorias</label>
-                        <select name="categorias" id="categorias">
-                            <optgroup label="Panes">
-                                <option value="pinita">Pinita</option>
-                                <option value="membrillo">Membrillo</option>
-                                <option value="queso">Queso</option>
-                                <option value="aromacanela">Aroma Canela</option>
-                                <option value="trenza">Trenza</option>
-                            </optgroup>
-                            <optgroup label="Tortas">
-                                <option value="tresleches">Tres Leches</option>
-                            </optgroup>
-                        </select>
-                    </form>
+    </main>
+    <!-- ends main-->
+    <!-- inicio footer-->
+    <footer class="container-fluid cLight">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 ">
+                    <img src="img/logo.png" alt="logo Aroma canela" class="logoPie">
                 </div>
-                <div class="gridPicture productos_galeria_figure">
-                    <figure>
-                        <img src="img/panpinita.jpeg" alt="Pan Pinita" class="productosimgPan">
-                        <figcaption class="productos_galeria_figure_figcaption">Pan Pinita</figcaption>
-                        <p class="productos_galeria_p">$150,00</p>
-                        <p class="productos_galeria_p">Pan dulce con destellos de anis</p>
-                    </figure>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h4 class="spacing">Seguinos en nuestras redes</h4>
+                    <a href="https://www.coderhouse.com/" target="_blank">
+                        <img src="img/facebook.png" alt="seguinos en facebook" class="pieIconsm spacing">
+                    </a>
+                    <a href="https://www.coderhouse.com/" target="_blank">
+                        <img src="img/instagram.png" alt="seguinos en instagram" class="pieIconsm spacing">
+                    </a>
                 </div>
-                <div class="gridPicture productos_galeria_figure">
-                    <figure>
-                        <img src="img/pandequeso.jpeg" alt="pan con queso" class="productosimgPan">
-                        <figcaption class="productos_galeria_figure_figcaption">Pan de Queso</figcaption>
-                        <p class="productos_galeria_p">$800,00</p>
-                        <p class="productos_galeria_p">Pan relleno de queso y gratinado</p>
-                    </figure>
-                </div>
-                <div class="gridPicture productos_galeria_figure">
-                    <figure>
-                        <img src="img/pantrenzadulce.jpeg" alt="Pan trenza dulce" class="productosimgPan">
-                        <figcaption class="productos_galeria_figure_figcaption">Pan Trenza Dulce</figcaption>
-                        <p class="productos_galeria_p">$600</p>
-                        <p class="productos_galeria_p">Pan Trenzado azucarado</p>
-                    </figure>
-                </div>
-                <div class="gridPicture productos_galeria_figure">
-                    <figure>
-                        <img src="img/panmembrillo.jpeg" alt="Pan de Membrillo" class="productosimgPan">
-                        <figcaption class="productos_galeria_figure_figcaption">Pan Membrillo</figcaption>
-                        <p class="productos_galeria_p">$700</p>
-                        <p class="productos_galeria_p">Pan relleno de membrillo</p>
-                    </figure>
-                </div>
-                <div class="gridPicture productos_galeria_figure">
-                    <figure>
-                        <img src="img/panaromacanela.jpeg" alt="Pan Aroma Canela" class="productosimgPan">
-                        <figcaption class="productos_galeria_figure_figcaption">Pan Aroma Canela</figcaption>
-                        <p class="productos_galeria_p">$650</p>
-                        <p class="productos_galeria_p">Pan endulzado con aroma a canela</p>
-                    </figure>
-                </div>
-                <div class="gridPicture productos_galeria_figure">
-                    <figure>
-                        <img src="img/tortatresleches.jpeg" alt="Torta Tres Leches" class="productosimgPan">
-                        <figcaption class="productos_galeria_figure_figcaption">Torta Tres Leches</figcaption>
-                        <p class="productos_galeria_p">$450</p>
-                        <p class="productos_galeria_p">Torta a base de leche evaporada, crema de leche, leche condensada con un acabo de crema
-                            chantilly
-                            y un toque de canela</p>
-                    </figure>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h4>Contacto</h4>
+                    <div>
+                        <img src="img/iconoubicacion.png" alt="direccion" class="pieIconsm spacing">
+                    </div>
+                    <div>
+                        <img src="img/iconollamada.png" alt="llamar" class="pieIconsm spacing">
+                    </div>
+                    <div>
+                        <img src="img/iconomail.png" alt="mail" class="pieIconsm spacing">
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
-
-        <div class="pie">
-            <footer id="contenedorPie" class="footer cLight">
-                <div>
-                    <div class="cajaLogo">
-                        <img src="img/logo.png" alt="logo Aroma canela" class="logoPie">
-                    </div>
-                </div>
-                <div>
-                    <div class="cajaRedes">
-                        <h4>Seguinos en nuestras redes</h4>
-                        <div class="cajaRedes1">
-                            <a href="https://www.coderhouse.com/" target="_blank">
-                                <img src="img/facebook.png" alt="seguinos en facebook" class="pieIconsm">
-                            </a>
-                        </div>
-                        <div class="cajaRedes2">
-                            <a href="https://www.coderhouse.com/" target="_blank">
-                                <img src="img/instagram.png" alt="seguinos en instagram" class="pieIconsm">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="cajaContacto">
-                        <h4>Contacto</h4>
-                        <div class="cajaContacto1">
-                            <img src="img/iconoubicacion.png" alt="direccion" class="pieIconsm">
-                        </div>
-                        <div class="cajaContacto2">
-                            <img src="img/iconollamada.png" alt="llamar" class="pieIconsm">
-                        </div>
-                        <div class="cajaContacto3">
-                            <img src="img/iconomail.png" alt="mail" class="pieIconsm">
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </div>
+    </footer>
+    <!-- ends footer-->
     </div>
 </body>
-
 </html>
