@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2? family= Merriweather+Sans:wght@300 & family= Oswald & display=swap');
 
-/* reset */
-*::after,
-*::before,
-* {
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-}
-
 html {
     font-size: 62.5%;
 }
@@ -46,21 +37,22 @@ h4 {
     font-family: 'Merriweather Sans', sans-serif;
 }
 
-#botonera img {
-    width: 200px;
-}
-
 p {
     font-family: 'Oswald', sans-serif;
 }
 
 .cCinnamon {
-    background-color: #d1a07d;
+    background-color: #eab78dd3;
     color: rgb(75, 55, 39);
 }
 
 .cLight {
-    background-color: rgba(255, 215, 186, 0.7);
+    background-color: rgba(255, 215, 186, 0.702);
+}
+
+.cLight1 {
+    background-color: rgba(250, 199, 158, 0.702);
+    background: linear-gradient(281deg, rgba(224, 177, 130, 1) 0%, rgba(255, 227, 201, 1) 74%);
 }
 
 .textCenter {
@@ -76,6 +68,10 @@ p {
 }
 
 /*NAVEGACION*/
+
+#botonera img {
+    width: 200px;
+}
 
 nav ul li {
     list-style: none;
@@ -96,29 +92,66 @@ nav ul li a:hover {
 
 }
 
-main section p {
-    color: rgb(131, 89, 47);
-    font-size: 2rem;
-    font-family: 'Oswald', sans-serif;
-    line-height: 2.2rem;
-    font-weight: 400;
+.novedadesArticulo {
+    width: 95%;
+    margin: 20px;
+    border: dotted rgb(110, 83, 63) 2px;
 }
 
-.novedadesArticulo {
-    width: 90%;
-    height: auto;
-    margin: 50px auto;
-    padding: 10px 20px;
+/* Nosotros */
+
+.conteinerNos {
     border: dotted rgb(110, 83, 63) 2px;
+}
+
+.selloNat {
+    width: 200px;
+    margin: 100px;
+}
+
+@keyframes animateSello{
+    0%{width: 200px}
+    50%{width: 250px;}
+    100%{width: 200px;}   
+}
+
+.animateSello{
+    animation-name: animateSello;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.imgNosotros {
+    width: 430px;
+    margin-bottom: 30px;
+}
+
+img[src="img/imgnosotros.jpeg"] {
+    border: solid 2px rgb(131, 89, 47);
+
+}
+
+.titleNosotros {
+    font-size: 3.5rem;
+    color: rgb(110, 83, 63);
+    margin-top: 180px;
+}
+
+.nosotrosP {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    color: rgb(110, 83, 63);
+}
+
+.selectores:first-letter {
+    color: #f7872cd3;
+    font-size: 3rem;
 }
 
 /* aromacanela */
 
 #contenedorAroma {
-    width: 95%;
-    height: 410px;
-    margin: 50px auto;
-    display: flex;
+    margin: 50px;
     border: dotted rgb(110, 83, 63) 2px;
     background-color: rgba(255, 208, 174, 0.7);
 }
@@ -126,29 +159,19 @@ main section p {
 .imgpanAromacanela {
     width: 500px;
     margin: 30px;
-    top: 40px;
-}
-
-.aromaImg {
-    top: 50px;
-    left: 40px;
-}
-
-#contenedorAroma section p {
-    margin: 50px;
-    left: 5px;
+    margin-top: 80px;
 }
 
 /*productos*/
 
-.titlePanes{
+.titlePanes {
     font-family: 'Oswald', sans-serif;
     font-size: 2.5rem;
     color: rgb(110, 83, 63);
     padding: 10px 0;
 }
 
-main article p{
+main article p {
     font-family: 'Oswald', sans-serif;
     font-size: 2rem;
     color: rgb(110, 83, 63);
@@ -162,25 +185,29 @@ main article p{
     color: rgb(110, 83, 63);
 }
 
+.card2 {
+    border: solid 1px rgb(131, 89, 47);
+}
+
+main img[src$=".jpeg"] {
+    border: solid 2px rgb(131, 89, 47);
+}
+
 /*promociones*/
 
 #contenedorPromociones {
-    width: 90%;
-    height: 300px;
-    margin: 50px auto;
-    position: relative;
+    margin: 60px;
     border: dotted rgb(110, 83, 63) 2px;
     background-color: rgba(255, 208, 174, 0.7);
 }
 
-.tipoPromociones {
-    top: 10px;
-    margin: 10px;
+main section p {
+    margin: 20px;
 }
 
 /* contacto */
 
-main div p{
+main div p {
     font-family: 'Oswald', sans-serif;
     font-size: 2.5rem;
     color: rgb(110, 83, 63);
@@ -189,7 +216,7 @@ main div p{
 
 /* footer */
 
-.spacing{
+.spacing {
     margin-top: 20px;
 }
 

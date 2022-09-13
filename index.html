@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aroma Canela - Panaderia Artesanal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="img/ms-icon-310x310.png" type="image/x-icon">
+    <title>Aroma Canela - Panaderia Artesanal</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- inicia nav-->
-    <nav class="navbar navbar-expand-lg navbar-light cLight" id="botonera">
+    <nav class="navbar navbar-expand-lg navbar-light cLight1" id="botonera">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img src="img/logo.png" alt="logo de Aroma Canela" class="logoNavegacion">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -34,7 +31,7 @@
                         <a class="nav-link" href="./productos.html">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./promociones.html">Promocioness</a>
+                        <a class="nav-link" href="./promociones.html">Promociones</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./contacto.html">Contacto</a>
@@ -45,30 +42,31 @@
     </nav>
     <!-- ends nav-->
     <!-- carousel -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/carrousel.jpeg" class="d-block w-100" alt="imagen carrousel panes">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./img/carrousel.jpeg" class="d-block w-100" alt="imagen pan carousel">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./img/carrousel1.jpeg" class="d-block w-100" alt="imagen pan carousel">
             </div>
             <div class="carousel-item">
-                <img src="img/carrousel1.jpeg" class="d-block w-100" alt="imagen carrousel panes">
-            </div>
-            <div class="carousel-item">
-                <img src="img/trigo.jpeg" class="d-block w-100" alt="imagen carrousel trigo">
+                <img src="./img/imgtrigo.jpeg" class="d-block w-100" alt="imagen trigo carousel">
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
@@ -77,13 +75,13 @@
     <!-- inicio main -->
     <main class="py-4">
         <div class="container-fluid">
-            <div class="card mb-3" style="w-100">
+            <div class="card mt-5 mb-5 mx-5 cLight">
                 <div class="row g-0">
                     <div class="col-sm-12 col-md-6 col-lg-6">
                         <img src="img/imgtrigo.jpeg" class="img-fluid rounded-start w-100" alt="imagen trigo">
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-6">
-                        <div class="card-body mb-3">
+                        <div class="card-body ms-5 mt-3 mb-5">
                             <h1 class="card-title">Aroma Canela Panaderia Artesanal</h1>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                                 additional content. This content is a little bit longer.</p>
@@ -92,72 +90,73 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid cLight">
-            <div class="container">
-                <h2>Contacto</h2>
-                <div class="row">
-                    <article class="col-sm-12 col-md-12 col-lg-6">
-                        <form>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp">
-                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+        <section class="py-3">
+            <div class="container-fluid">
+                <div class="container ms-5 cLight">
+                    <div class="row">
+                        <article class="col-sm-12 col-md-12 col-lg-6">
+                            <form class="mt-5 ms-2">
+                                <h2>Contacto</h2>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
-                            </div>
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                            </div>
-                            <button type="submit" class="btn cCinnamon mb-3">Submit</button>
-                        </form>
-                    </article>
-                    <article class="col-sm-12 col-md-12 col-lg-6">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.392069010417!2d-58.46530524988276!3d-34.56894476306875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb67878d925bf%3A0x95a00d4b32510245!2sMariscal%20Antonio%20Jos%C3%A9%20de%20Sucre%203250%2C%20C1428%20CABA!5e0!3m2!1ses-419!2sar!4v1662679207185!5m2!1ses-419!2sar"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </article>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <button type="submit" class="btn cCinnamon mb-3">Submit</button>
+                            </form>
+                        </article>
+                        <article class="col-sm-12 col-md-12 col-lg-6">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.392069010417!2d-58.46530524988276!3d-34.56894476306875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb67878d925bf%3A0x95a00d4b32510245!2sMariscal%20Antonio%20Jos%C3%A9%20de%20Sucre%203250%2C%20C1428%20CABA!5e0!3m2!1ses-419!2sar!4v1662679207185!5m2!1ses-419!2sar"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </article>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     <!-- ends main -->
-    <!-- inicio footer-->
-    <footer class="container-fluid cLight">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 ">
-                    <img src="img/logo.png" alt="logo Aroma canela" class="logoPie">
+    <!-- inicio footer -->
+    <footer class="container-fluid cLight1">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 ">
+                <img src="img/logo.png" alt="logo Aroma canela" class="logoPie">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h4 class="spacing">Seguinos en nuestras redes</h4>
+                <a href="https://www.coderhouse.com/" target="_blank">
+                    <img src="img/facebook.png" alt="seguinos en facebook" class="pieIconsm spacing">
+                </a>
+                <a href="https://www.coderhouse.com/" target="_blank">
+                    <img src="img/instagram.png" alt="seguinos en instagram" class="pieIconsm spacing">
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h4 class="spacing">Contacto</h4>
+                <div>
+                    <img src="img/iconoubicacion.png" alt="direccion" class="pieIconsm spacing">
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <h4 class="spacing">Seguinos en nuestras redes</h4>
-                    <a href="https://www.coderhouse.com/" target="_blank">
-                        <img src="img/facebook.png" alt="seguinos en facebook" class="pieIconsm spacing">
-                    </a>
-                    <a href="https://www.coderhouse.com/" target="_blank">
-                        <img src="img/instagram.png" alt="seguinos en instagram" class="pieIconsm spacing">
-                    </a>
+                <div>
+                    <img src="img/iconollamada.png" alt="llamar" class="pieIconsm spacing">
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <h4 class="spacing">Contacto</h4>
-                    <div>
-                        <img src="img/iconoubicacion.png" alt="direccion" class="pieIconsm spacing">
-                    </div>
-                    <div>
-                        <img src="img/iconollamada.png" alt="llamar" class="pieIconsm spacing">
-                    </div>
-                    <div>
-                        <img src="img/iconomail.png" alt="mail" class="pieIconsm spacing">
-                    </div>
+                <div>
+                    <img src="img/iconomail.png" alt="mail" class="pieIconsm spacing">
                 </div>
             </div>
         </div>
     </footer>
     <!-- ends footer-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
