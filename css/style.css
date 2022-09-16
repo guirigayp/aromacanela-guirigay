@@ -92,12 +92,6 @@ nav ul li a:hover {
 
 }
 
-.novedadesArticulo {
-    width: 95%;
-    margin: 20px;
-    border: dotted rgb(110, 83, 63) 2px;
-}
-
 /* Nosotros */
 
 .conteinerNos {
@@ -206,6 +200,12 @@ main section p {
 }
 
 /* contacto */
+
+.novedadesArticulo {
+    width: 95%;
+    margin: 20px;
+    border: dotted rgb(110, 83, 63) 2px;
+}
 
 main div p {
     font-family: 'Oswald', sans-serif;

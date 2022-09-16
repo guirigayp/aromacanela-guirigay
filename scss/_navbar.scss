@@ -1,0 +1,39 @@
+//nesting   
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $navColor;
+    img {
+        width: 200px;
+    }
+    ul{
+        display: flex;
+        li{
+            list-style: none;
+            margin-right: 35px;
+            a{
+                font-size: $fontNav;
+                color: $textColor;
+                text-decoration: none;
+                font-family: $mainFont;
+                transition: font-size 1s;
+                &:hover{
+                    color: black;
+                    text-decoration: underline;
+                    font-size: $fontHover;
+                }
+            }   
+        }
+    }
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url(../img/fondodepanaderia.jpeg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}

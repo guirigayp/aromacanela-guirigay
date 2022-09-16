@@ -1,0 +1,23 @@
+//fonts google
+@import url('https://fonts.googleapis.com/css2? family= Merriweather+Sans:wght@300 & family= Oswald & display=swap');
+
+$mainFont: 'Merriweather Sans', sans-serif;
+$secondaryFont: 'Oswald', sans-serif;
+
+//sizzings
+$fontXl: 4rem;
+$fontLg: 3rem;
+$fontMd: 2.5rem;
+$fontSm: 2rem;
+$fontNav: 2.2rem;
+$fontHover: 2.6rem;
+
+//clases para textos
+.textCenter {
+    text-align: center;
+}
+
+.textLeft {
+    text-align: left;
+}
+
