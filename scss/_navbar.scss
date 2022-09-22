@@ -3,7 +3,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $navColor;
+    background: linear-gradient(281deg, rgba(224, 177, 130, 1) 0%, rgba(255, 227, 201, 1) 74%);
     img {
         width: 200px;
     }
@@ -19,7 +19,7 @@ nav{
                 font-family: $mainFont;
                 transition: font-size 1s;
                 &:hover{
-                    color: black;
+                    color: $textColor;
                     text-decoration: underline;
                     font-size: $fontHover;
                 }

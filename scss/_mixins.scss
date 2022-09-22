@@ -1,39 +1,32 @@
 //extends
-.btn-productos{
-    width: 100px;
-    height: 30px;
-    border: none;
-    background-color: $bottonColor;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $textbottonColor;
-    border-radius: 2px;
-}
-
-.btn-contacto{
-    @extend .btn-productos;
-    width: 60px;
-}
-
-.box-promociones{
-    margin: 60px;
-    border: dotted 2px $textColor;
+.conteinerNos{
+    border: solid $textColor 1px;
     background-color: $aromapromoColor;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
 }
 
+.contenedorPromociones{
+    @extend .conteinerNos;
+    margin: 50px;
+}
+
+#contenedorAroma{
+    @extend .conteinerNos;
+    @extend .contenedorPromociones;
+}
 
 //mixins
 
-@mixin textos ($size,$interlineado,$color){
-    padding: 10px;
-    margin: 10px 30px;
+@mixin textos($size, $interlineado, $color, $align){
+    font-size: $size;
+    line-height: $interlineado;
+    color: $color;
     font-family: 'Oswald', sans-serif;
+    margin: 10px;
+    @if $align == left{text-align: left;}
+    @if $align == center{text-align: center;}
 }
+//@include textos(2em, 2.2em, $textColor)
 
-p{
-    @include textos(2em, 2.2em, $textColor)
-}
+
+
+

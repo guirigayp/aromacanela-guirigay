@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2? family= Merriweather+Sans:wght@300 & family= Oswald & display=swap");
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(281deg, rgb(224, 177, 130) 0%, rgb(255, 227, 201) 74%);
+}
+nav img {
+  width: 200px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  margin-right: 35px;
+}
+nav ul li a {
+  font-size: 2.2rem;
+  color: rgb(110, 83, 63);
+  text-decoration: none;
+  font-family: "Merriweather Sans", sans-serif;
+  transition: font-size 1s;
+}
+nav ul li a:hover {
+  color: rgb(110, 83, 63);
+  text-decoration: underline;
+  font-size: 2.6rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(../img/fondodepanaderia.jpeg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+.conteinerNos, #contenedorAroma, .contenedorPromociones {
+  border: solid rgb(110, 83, 63) 1px;
+  background-color: rgba(255, 208, 174, 0.7);
+}
+
+.contenedorPromociones, #contenedorAroma {
+  margin: 50px;
+}
+
+.navColor {
+  background-color: rgba(250, 199, 158, 0.702);
+}
+
+.mainColor {
+  background-color: rgba(255, 215, 186, 0.702);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(110, 83, 63);
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+.encabezadoimgFluid {
+  width: 100%;
+}
+
+.filtros {
+  padding: 20px;
+  font-family: 2.2rem;
+  font-size: 2rem;
+  color: rgb(110, 83, 63);
+}
+
+.card2 {
+  width: 300px;
+  margin: 80px;
+  border: solid 1px rgb(110, 83, 63);
+  background-color: rgba(255, 208, 174, 0.7);
+  font-family: "Oswald", sans-serif;
+}
+
+main article img {
+  width: 100%;
+  border: solid 1px rgb(131, 89, 47);
+}
+
+.titlePanes {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;
+  color: rgb(110, 83, 63);
+  margin: 10px;
+}
+
+main div p {
+  font-size: 2em;
+  line-height: 2.2em;
+  color: rgb(110, 83, 63);
+  font-family: "Oswald", sans-serif;
+  margin: 10px;
+  text-align: left;
+  margin: 10px;
+}
+
+.btn {
+  width: 100px;
+  height: 30px;
+  border: none;
+  background-color: rgba(234, 183, 141, 0.8274509804);
+  color: rgb(75, 55, 39);
+  border-radius: 2px;
+  font-size: 1.3em;
+}
+
+main section div article p {
+  font-size: 2em;
+  line-height: 2.2em;
+  color: rgb(110, 83, 63);
+  font-family: "Oswald", sans-serif;
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.novedadesArticulo {
+  width: 95%;
+  margin: 20px;
+  border: solid rgb(110, 83, 63) 1px;
+  background-color: rgba(255, 208, 174, 0.7);
+}
+
+.selectores:first-letter {
+  color: rgba(247, 135, 44, 0.8274509804);
+  font-size: 3rem;
+}
+
+.selloNat {
+  width: 200px;
+  margin: 100px;
+}
+
+@-webkit-keyframes animateSello {
+  0% {
+    width: 200px;
+  }
+  50% {
+    width: 250px;
+  }
+  100% {
+    width: 200px;
+  }
+}
+
+@keyframes animateSello {
+  0% {
+    width: 200px;
+  }
+  50% {
+    width: 250px;
+  }
+  100% {
+    width: 200px;
+  }
+}
+.animateSello {
+  -webkit-animation-name: animateSello;
+          animation-name: animateSello;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.imgNosotros {
+  width: 430px;
+  margin-bottom: 30px;
+}
+
+img[src="img/imgnosotros.jpeg"] {
+  border: solid 2px rgb(131, 89, 47);
+}
+
+.imgpanAromacanela {
+  width: 500px;
+  margin: 30px;
+  margin-top: 80px;
+}
+
+.mapa {
+  width: 600px;
+  height: 450px;
+  border: 0;
+}
+
+main section article h1 {
+  text-align: center;
+}
+
+.spacing {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoPie {
+  width: 200px;
+}
+
+.pieIconsm {
+  width: 35px;
+}
+
+.footer {
+  background: linear-gradient(281deg, rgb(224, 177, 130) 0%, rgb(255, 227, 201) 74%);
+}

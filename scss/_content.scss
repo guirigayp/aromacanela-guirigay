@@ -3,6 +3,7 @@ h2,
 h3,
 h4{
     color: $textColor;
+    font-family: $mainFont;
 }
 
 h1{
@@ -18,7 +19,113 @@ h3{
 }
 
 h4{
-    font-size: $fondSm;
+    font-size: $fontSm;
 }
 
+.encabezadoimgFluid{
+    width: 100%;
+}
+
+.filtros {
+    padding: 20px;
+    font-family: $fontNav;
+    font-size: $fontSm;
+    color: $textColor;
+}
+
+.card2 {
+    width: 300px;
+    margin: 80px;
+    border: solid 1px $textColor;
+    background-color: $aromapromoColor;
+    font-family: $secondaryFont;
+}
+
+main article img {
+    width: 100%;
+    border: solid 1px rgb(131, 89, 47);
+}    
+
+.titlePanes {
+    font-family: $secondaryFont;
+    font-size: $fontMd;
+    color: $textColor;
+    margin: 10px;
+}
+
+main div p{
+    @include textos(2em, 2.2em, $textColor,left);
+    margin: 10px;
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: $bottonColor;
+    color: $textbottonColor;
+    border-radius: 2px;
+    font-size: 1.3em;
+}
+
+
+main section div article p{
+    @include textos(2em,2.2em,$textColor,center);
+    padding: 20px;
+}
+
+.novedadesArticulo {
+    width: 95%;
+    margin: 20px;
+    border: solid rgb(110, 83, 63) 1px;
+    background-color: $aromapromoColor;
+}
+
+.selectores:first-letter {
+    color: #f7872cd3;
+    font-size: 3rem;
+}
+
+.selloNat {
+    width: 200px;
+    margin: 100px;
+}
+
+@keyframes animateSello{
+    0%{width: 200px}
+    50%{width: 250px;}
+    100%{width: 200px;}   
+}
+
+.animateSello{
+    animation-name: animateSello;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.imgNosotros {
+    width: 430px;
+    margin-bottom: 30px;
+}
+
+img[src="img/imgnosotros.jpeg"] {
+    border: solid 2px rgb(131, 89, 47);
+
+}
+
+.imgpanAromacanela {
+    width: 500px;
+    margin: 30px;
+    margin-top: 80px;
+}
+
+.mapa{
+    width: 600px; 
+    height: 450px; 
+    border: 0;
+}
+
+main section article h1{
+    text-align: center;
+}
 
