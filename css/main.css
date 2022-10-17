@@ -205,7 +205,7 @@ img[src="img/imgnosotros.jpeg"] {
 }
 
 .mapa {
-  width: 600px;
+  width: 500px;
   height: 450px;
   border: 0;
 }
@@ -230,4 +230,11 @@ main section article h1 {
 
 .footer {
   background: linear-gradient(281deg, rgb(224, 177, 130) 0%, rgb(255, 227, 201) 74%);
+}
+
+footer div p {
+  font-size: 2rem;
+  line-height: 2.2em;
+  color: rgb(110, 83, 63);
+  font-family: "Oswald", sans-serif;
 }
